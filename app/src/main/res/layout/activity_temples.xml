@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TemplesActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutKedarnath"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#77DDE8"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerKedarnath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#D63838"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#040202"
+        app:tabTextColor="#F4F1F1" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerKedarnath"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutKedarnath" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
